@@ -6,7 +6,6 @@ const PORT = process.env.PORT;
 const app = express();
 
 app.use(cors());
-
 app.use(express.static(path.resolve(__dirname, './public')));
 
 app.get('/', (req, res) => res.sendFile('./public/index.html', { root: __dirname }));

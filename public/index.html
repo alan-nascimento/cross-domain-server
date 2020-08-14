@@ -12,14 +12,11 @@
 
   <script src="./hub.js"></script>
   <script>
-    localStorage.setItem('app-1', 'app-1-item');
-
-
     CrossStorageHub.init([
       { origin: /.*netlify\.app$/, allow: ['get', 'set', 'del', 'getKeys', 'clear'] }
     ]);
 
-    console.warn(CrossStorageHub)
+    console.warn('CrossStorageHub', CrossStorageHub)
   </script>
 </body>
 
