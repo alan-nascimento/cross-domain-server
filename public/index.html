@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>HUB</h1>
+
+  <script src="./hub.js"></script>
+  <script>
+    localStorage.setItem('app-1', 'app-1-item');
+
+    CrossStorageHub.init([
+      { origin: 'http://alan-nascimento.cross-domain-client.github.io', allow: ['get', 'set', 'del', 'getKeys', 'clear'] }
+    ]);
+
+    console.warn(CrossStorageHub)
+  </script>
+</body>
+
+</html>

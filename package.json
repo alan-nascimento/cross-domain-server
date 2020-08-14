@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-storage": "^1.0.0",
+    "express": "^4.17.1"
+  }
+}
