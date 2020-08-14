@@ -14,8 +14,9 @@
   <script>
     localStorage.setItem('app-1', 'app-1-item');
 
+
     CrossStorageHub.init([
-      { origin: /.*herokuapp\.com$/, allow: ['get', 'set', 'del', 'getKeys', 'clear'] }
+      { origin: /.*netlify\.app$/, allow: ['get', 'set', 'del', 'getKeys', 'clear'] }
     ]);
 
     console.warn(CrossStorageHub)
