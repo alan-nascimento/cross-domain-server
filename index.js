@@ -8,6 +8,6 @@ const app = express();
 app.use(cors());
 app.use(express.static(path.resolve(__dirname, './public')));
 
-app.get('/', (req, res) => res.sendFile('./public/index.html', { root: __dirname }));
+app.get('/', (req, res) => res.sendFile('./public/index.html'));
 
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
